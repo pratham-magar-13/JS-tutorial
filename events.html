@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="button-new" onclick="console.log('button was clicked');alert('What are you doing?')">Click Me!</button>
+  <button ondblclick="console.log('button was clicked twice'); alert('Again, what are you doing')">Click me 2 times</button>
+  <div>
+    this is a box
+  </div>
+<!-- It is the inline event and this is the bad way of handling events  -->
+  
+<!-- improvised way is below -->
+
+<!-- if we handled the event for an element by inline or by js code then js code will get executed instead of inline one -->
+ <!-- But eventlistener is the best because we can assign multiple methods to it, if it was jus arrow method in js then the last event would be recognized discarding the first event -->
+<button id="btn1">Another goddamn click me button</button>
+  <script src="events.js">
+  </script>
+</body>
+</html>
